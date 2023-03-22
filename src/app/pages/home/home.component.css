@@ -39,6 +39,12 @@
     text-align: center;
 
 }
+.highlight{
+    color: var(--primary-color);
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
 .container h2  {
     text-transform: capitalize;
     margin-bottom: 30px;
@@ -61,4 +67,21 @@
 }
 .row aside p {
     font-style: italic;
+}
+.box {
+    display: flex;
+    background-color: #fff;
+    gap: 10px;
+    padding: 0;
+}
+
+figure img {
+    width: 100%;
+    object-fit: cover;
+}
+.box h3 {
+    font-size: 20px;
+    margin: 10px 0 0px ;
+    font-weight: bold;
+    
 }
