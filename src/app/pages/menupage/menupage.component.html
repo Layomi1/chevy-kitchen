@@ -1,14 +1,15 @@
 <section class="container mt-5 mb-4 ">
-    <a routerLink="menu" class="back">Back</a>
-    <article class="container mt-5 mb-5">
-        <article class="row">
-            <figure class="col-lg-6" *ngif="menuData">
-                <img src="{{menuData[0].foodImg}}" alt="food-image" width="600" height="600">
-                <figcaption>{{menuData[0].foodName}}</figcaption>
-                <p>{{menuData[0].foodDetails}}</p>
-                <p>{{menuData[0].foodPrice | currency:'$'}}.00</p>
-            </figure>
-            <aside class="col-lg-6">
+    <a routerLink="/menu" class="backbtn btn-dark">Back</a>
+    <article class="row">
+        <figure class=" col-lg-6 mt-3" *ngIf="menuData">
+            <img src="{{menuData[0].foodImg}}" alt="food-image" width="600" height="600">
+            <figcaption>{{menuData[0].foodName}}</figcaption>
+            <p style="font-size: 14px;">{{menuData[0].foodDetails}}</p>
+            <p>{{menuData[0].foodPrice | currency:'$'}}</p>
+        </figure>
+
+        
+        <aside class="col-lg-6 ">
                 <h2>Enter your Details</h2>
                 <form action="">
                     <p>
@@ -26,9 +27,9 @@
                 </form>
                 <label for="order"></label>
                 <input class="btn btn-dark" type="button" value="Place Order" id="order" >
-            </aside>
+        </aside>
         </article>
-    </article>
+    
     
 </section>
 

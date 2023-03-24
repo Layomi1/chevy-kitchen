@@ -2,7 +2,18 @@
 figure img {
     width: 100%;
     margin-bottom: 10px;
-    /* height: 500px; */
+    height: 300px; 
+    object-fit: cover;
+}
+a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    
+}
+.row{
+    display: flex;
     
 }
 figcaption {
@@ -14,6 +25,8 @@ figure p {
 }
 h2{
     font-size: 30px;
+    text-transform: capitalize;
+    margin-bottom: 15px;
 }
 input[type=text],textarea{
     padding: 5px;
