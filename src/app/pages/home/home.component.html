@@ -5,7 +5,7 @@
     </aside>
 </section>
 <!-- steps -->
-<section class=" container mt-5 mb-4 ms-5">
+<section class=" container mt-5 mb-4 ps-3">
     <h2>how to get <span class="highlight">fresh food.</span> </h2>
     <article class="row">
         <aside class="col-lg-4">
@@ -24,16 +24,18 @@
         </aside>
     </article>
 </section>
+
 <!-- foodbox -->
-<section class="container mt-5 mb-4  ms-5">
+<section class="container mt-5 mb-4"> 
     <h2>Customers <span class="highlight">favorite food</span></h2>
-    <article class="box">
-        <aside class="col-lg-3" *ngFor="let fd of foodData; index as i">
-            <figure class="" *ngIf="i<=3">
-                <img src="{{fd.foodImg}}" alt="food-image" width="250" height="250">
-                <h3>{{fd.foodName}}</h3>
+    <article class="row" >
+        <p class="col-lg-3 mb-2" style="background-color: none;"  *ngFor="let fd of foodData; index as i">
+            <figure class=" " *ngIf="i<=3">
+                <img src="{{fd.foodImg}}" alt="food-image" width="600" height="600">
+                <figcaption>{{fd.foodName}}</figcaption>
                 <p>${{fd.foodPrice}}</p>
             </figure>
-        </aside>
+        </p>  
     </article>
-</section>
+    <a routerLink="menu" class="viewbtn">view more<span><i class="bi bi-arrow-right"></i></span></a>
+</section> 

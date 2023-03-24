@@ -1,1 +1,17 @@
-<p>menu works!</p>
+<section class="container mt-5 mb-4 ">
+    <article class="row">
+        <aside class="col-lg-4 mb-5" *ngFor="let fd of foodData;">
+            <figure>
+                <img class="mb-2" src="{{fd.foodImg}} " alt="food-image" width="600" height="600">
+                <figcaption>{{fd.foodName}}</figcaption>
+                <p>{{fd.foodDetails}}</p>
+                <p>${{fd.foodPrice}}.00</p>
+            </figure>
+            
+            <a class="buy-btn" [routerLink]="['/menu', fd.id]">Buy Now<span><i class="bi bi-bag"></i></span></a>
+            
+        </aside>
+    </article>
+    
+</section>
+
