@@ -1,4 +1,4 @@
-# Chevy
+# Chevy-kitchen is hosted on https://layomi1.github.io/chevy-kitchen/
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.4.
 
