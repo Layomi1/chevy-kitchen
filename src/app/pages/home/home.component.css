@@ -92,7 +92,7 @@ figcaption {
     border-radius: 5px;  
     margin-bottom: 20px;
     font-size: 18px;
-    
+    display: inline-block;
 }
 .viewbtn:hover{
     color:#fff ;
